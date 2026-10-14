@@ -35,6 +35,8 @@ public class FileHandler<T> {
      * @throws IOException si ocurre un error de entrada/salida.
      * @throws ClassNotFoundException si la clase de algún objeto serializado no puede ser encontrada.
      */
+    
+
     @SuppressWarnings("unchecked")
     public List<T> fileToList() throws IOException, ClassNotFoundException {
         List<T> miLista = new ArrayList<T>();

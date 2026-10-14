@@ -117,10 +117,10 @@ public class PreguntaControlador implements ActionListener {
         } else if (e.getSource() == vista.getConfirmarButton()) {
             int selectedAnswer = Integer.parseInt(vista.getButtonGroup().getSelection().getActionCommand());
                 if (selectedAnswer==this.correctIndex){
-                    vista.mostrarMensajeConfirmacion("Respuesta correctamente.");
+                    vista.mostrarMensajeConfirmacion("Respuesta correcta.");
                     //JOptionPane.showMessageDialog(vista, "¡Correcto!", "Resultado", JOptionPane.INFORMATION_MESSAGE);
                 } else {
-                    vista.mostrarMensajeError("Respuesta INcorrecta, vuelve a intentarlo!");
+                    vista.mostrarMensajeError("Respuesta incorrecta, vuelve a intentarlo!");
                     //JOptionPane.showMessageDialog(vista, "¡Incorrecto!" + selectedAnswer + this.correctIndex , "Resultado", JOptionPane.ERROR_MESSAGE);
                 }
             
